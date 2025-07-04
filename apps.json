@@ -11,6 +11,7 @@
       "downloadURL": "https://github.com/Benjamin123-tech/update-check/raw/refs/heads/main/org.brandonplank.flappybird.ipa",
       "iconURL": "https://raw.githubusercontent.com/Benjamin123-tech/update-check/main/IMG_6370.jpeg",
       "tintColor": "#FFD700"
+      **"localizedDescription": "Der Klassiker Flappy Bird für AltStore."**
     }
   ]
 }
