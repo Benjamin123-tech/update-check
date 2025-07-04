@@ -1,0 +1,16 @@
+{
+  "name": "Flappy Bird Quelle",
+  "identifier": "com.benjamin.source",
+  "apps": [
+    {
+      "name": "Flappy Bird",
+      "bundleIdentifier": "org.brandonplank.flappybird",
+      "developerName": "Benjamin",
+      "subtitle": "AltStore-kompatible Version",
+      "version": "4.3",
+      "downloadURL": "https://github.com/Benjamin123-tech/update-check/raw/refs/heads/main/org.brandonplank.flappybird.ipa",
+      "iconURL": "https://raw.githubusercontent.com/Benjamin123-tech/update-check/main/IMG_6370.jpeg",
+      "tintColor": "#FFD700"
+    }
+  ]
+}
