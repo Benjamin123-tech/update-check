@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meine erste Webseite</title>
+        <style>
+            header {
+                height: 37px;
+                box-shadow: 10px 10px 11px -1px #838383;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: #242b3c;
+            }
+            header a {
+                margin-right: 15px;
+                color: cornflowerblue;
+                font-size: 25px;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            header a:hover {
+                color: rgb(21, 93, 227);
+            }
+            h1 {
+                color: rgb(255, 191, 0);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p {
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body {
+                background-color: #141821;
+            }
+            #bright {
+                margin-right: 15px;
+                color: white;
+                font-size: 25px;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #bright:hover {
+                color: rgb(176, 176, 176);
+            }
+        </style>
+        <script>
+            function mode() {
+                localStorage.bright = bright
+                if (localStorage.getItem("dark")) {
+                    localStorage.removeItem("dark")
+                }
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Homepage</a>
+            <a href="about.html">Über mich</a>
+            <a href="duolingo.html">Duolingo</a>
+            <a href="NGG/index.html">Spiel</a>
+            <a href="password.html">Bilder</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="info.html">Info</a>
+            <a id="bright" href="../index.html" onclick="mode()">Hell</a>
+        </header>
+        <h1>Meine erste Webseite!</h1>
+        <p>Mein Name ist <em>Benjamin.</em></p>
+    </body>
+</html>
