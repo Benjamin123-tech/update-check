@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infos</title>
+        <script>
+            function VSCode() {
+                window.location.href = "https://vscode.dev";
+                return false;
+            }
+        </script>
+        <style>
+            header {
+                height: 37px;
+                box-shadow: 10px 10px 11px -1px #838383;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            header a {
+                margin-right: 15px;
+                color: cornflowerblue;
+                font-size: 25px;
+                text-decoration: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            header a:hover {
+                color: rgb(21, 93, 227);
+            }
+            p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h4 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #dark {
+                color: #434343;
+            }
+            #dark:hover {
+                color: #000000;
+            }
+            .old {
+                color: cornflowerblue;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .old:hover {
+                color: rgb(21, 93, 227);
+            }
+        </style>
+        <script>
+            function mode() {
+                localStorage.dark = dark
+                if (localStorage.getItem("bright")) {
+                    localStorage.removeItem("bright")
+                }
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Homepage</a>
+            <a href="about.html">Über mich</a>
+            <a href="duolingo.html">Duolingo</a>
+            <a href="NGG/index.html">Spiel</a>
+            <a href="password.html">Bilder</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="info.html">Info</a>
+            <a id="dark" href="Dark/info.html" onclick="mode()">Dunkel</a>
+        </header>
+        <h4>Autor: Benjamin Kalb</h4>
+        <p>Version: 6.5</p>
+        <p><strong>Neuerungen:</strong></p>
+        <p>
+            - Beim Verlassen der Webseite wird mit <code>localStorage</code> gespeichert,<br> ob das letzte Mal der Dunkel- oder Hellmodus angeschaltet war,<br> und der entsprechende Modus wird aktiviert. <br>
+            - Weitere kleine Bugfixes <br>
+        </p>
+        <a class="old" href="https://meine-webseite-alt.netlify.app/">Alte Version ansehen (5.3)</a>
+        <br>
+        <p>Geschrieben mit:</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHFT6B8GpiSVEpgrxoKjHcbBM-x8_nBnMV3A&s" height="150px" alt="Visual Studio Code" onclick="VSCode()">
+    </body>
+</html>
